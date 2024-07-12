@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <script src="script.js"></script>
+    <header>
+        <h1>Rock Paper and Scissor</h1>
+    </header>
+    <main>
+        <div id="choice">  
+            <button id="rock"><img src="./icons/humanChoice/rock-sign.jpeg" alt="Rock"></button>
+            <button id="paper"><img src="./icons/humanChoice/paper-sign.jpeg" alt="Paper"></button>
+            <button id="scissor"><img src="./icons/humanChoice/scissor-sign.jpeg" alt="Scissor"></button>
+        </div>
+        <div class="scorecard">
+            <div>SCORE</div>
+            <div id="score"></div>
+        </div>
+        <div id="holder">
+            <div class="container">
+                <div>
+                <div id="human-choice"><img src="./icons/human-icon.jpg" alt="human icon"></div>
+                <div class="text">You</div>
+                </div>
+                <div id="vs"><img src="./icons/versus.jpg" alt="versus"></div>
+                <div>
+                <div id="computer-choice"><img src="./icons/computer-icon.png" alt="computer icon"></div>
+                <div class="text">Computer</div>
+                </div>
+            </div>
+            <div id="result">To start, choose any of the above three options</div>
+        </div>
+        <button id="reset">Reset</button>
+    </main>
 </body>
 </html>
